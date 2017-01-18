@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-Regular.ttf">
+            <string>OpenSans</string>
+        </array>
+        <array key="OpenSans-Semibold.ttf">
+            <string>OpenSans-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="exploreCell" id="gTV-IL-0wX" customClass="ExploreNewCell">
+            <rect key="frame" x="0.0" y="0.0" width="223" height="212"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="223" height="212"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9fm-Uk-0TZ"/>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lEf-xZ-50l">
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.40000000000000002" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wks-Zl-hOl">
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Seoul" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7yW-WM-lrW">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="s3T-0m-3P8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="South Korea" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cbc-vy-FYy">
+                                <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="15"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Cbc-vy-FYy" secondAttribute="trailing" constant="5" id="G2z-NI-NMx"/>
+                            <constraint firstAttribute="height" constant="80" id="IH3-rc-Tiv"/>
+                            <constraint firstAttribute="trailing" secondItem="wks-Zl-hOl" secondAttribute="trailing" id="LXT-cV-K2X"/>
+                            <constraint firstItem="Cbc-vy-FYy" firstAttribute="top" secondItem="7yW-WM-lrW" secondAttribute="bottom" constant="-16" id="O31-GY-qQ7"/>
+                            <constraint firstItem="7yW-WM-lrW" firstAttribute="leading" secondItem="lEf-xZ-50l" secondAttribute="leading" constant="15" id="PIA-3X-c6j"/>
+                            <constraint firstAttribute="trailing" secondItem="7yW-WM-lrW" secondAttribute="trailing" constant="5" id="Q38-zI-qTw"/>
+                            <constraint firstItem="Cbc-vy-FYy" firstAttribute="leading" secondItem="lEf-xZ-50l" secondAttribute="leading" constant="15" id="lFI-Uh-s48"/>
+                            <constraint firstItem="wks-Zl-hOl" firstAttribute="top" secondItem="lEf-xZ-50l" secondAttribute="top" id="lxK-WI-GwS"/>
+                            <constraint firstItem="wks-Zl-hOl" firstAttribute="leading" secondItem="lEf-xZ-50l" secondAttribute="leading" id="miq-Xk-mVQ"/>
+                            <constraint firstAttribute="bottom" secondItem="wks-Zl-hOl" secondAttribute="bottom" id="sVg-Xj-iP5"/>
+                            <constraint firstItem="7yW-WM-lrW" firstAttribute="top" secondItem="lEf-xZ-50l" secondAttribute="top" id="slX-BJ-18J"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="9fm-Uk-0TZ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="74f-sa-m1y"/>
+                <constraint firstItem="lEf-xZ-50l" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="7zY-Ya-m4B"/>
+                <constraint firstAttribute="bottom" secondItem="9fm-Uk-0TZ" secondAttribute="bottom" id="JMS-EM-Alr"/>
+                <constraint firstItem="9fm-Uk-0TZ" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Ldn-KM-KDD"/>
+                <constraint firstItem="lEf-xZ-50l" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="O3S-VV-fXi"/>
+                <constraint firstAttribute="trailing" secondItem="9fm-Uk-0TZ" secondAttribute="trailing" id="Oex-Qt-gaG"/>
+                <constraint firstAttribute="trailing" secondItem="lEf-xZ-50l" secondAttribute="trailing" id="XEc-x4-yZg"/>
+            </constraints>
+            <size key="customSize" width="223" height="212"/>
+            <connections>
+                <outlet property="bckgrdView" destination="lEf-xZ-50l" id="dzx-oY-a5m"/>
+                <outlet property="img" destination="9fm-Uk-0TZ" id="x5d-MZ-9Qd"/>
+                <outlet property="lbl1" destination="7yW-WM-lrW" id="PnY-JV-Hx5"/>
+                <outlet property="lbl2" destination="Cbc-vy-FYy" id="7J3-KH-GV0"/>
+            </connections>
+            <point key="canvasLocation" x="432.5" y="284"/>
+        </collectionViewCell>
+    </objects>
+</document>

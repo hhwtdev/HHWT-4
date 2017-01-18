@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-Regular.ttf">
+            <string>OpenSans</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="foodCell" rowHeight="111" id="cb0-Mt-fCG" customClass="FoodTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="319" height="111"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cb0-Mt-fCG" id="xB7-Fc-B5r">
+                <frame key="frameInset" width="319" height="110"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="434-wl-tZg">
+                        <constraints>
+                            <constraint firstAttribute="width" constant="150" id="bW9-gX-ALw"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Oshio" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="psL-59-6S7">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="Ppc-kc-mRm"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="13"/>
+                        <color key="textColor" red="0.21960784310000001" green="0.41960784309999999" blue="0.3803921569" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="japanese, streakhouse" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="gWG-Lb-PEd">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="sze-aO-fGV"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="13"/>
+                        <color key="textColor" red="0.21960784310000001" green="0.41960784309999999" blue="0.3803921569" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="pAz-wd-iEG"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Oshio" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="U5S-wA-749">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="ngt-3a-t3e"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="15"/>
+                        <color key="textColor" red="0.21960784310000001" green="0.41960784309999999" blue="0.3803921569" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eWV-Gp-Asq" customClass="ASStarRatingView">
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="1FB-JQ-xBh"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="U5S-wA-749" firstAttribute="top" secondItem="xB7-Fc-B5r" secondAttribute="top" constant="1" id="1sK-nQ-OHd"/>
+                    <constraint firstItem="434-wl-tZg" firstAttribute="centerY" secondItem="pAz-wd-iEG" secondAttribute="centerY" constant="5.5" id="2tt-GW-uaz"/>
+                    <constraint firstAttribute="trailing" secondItem="eWV-Gp-Asq" secondAttribute="trailing" constant="8" id="56k-TB-hRP"/>
+                    <constraint firstAttribute="bottom" secondItem="434-wl-tZg" secondAttribute="bottom" constant="5" id="7nH-Ow-vBJ"/>
+                    <constraint firstItem="gWG-Lb-PEd" firstAttribute="top" secondItem="psL-59-6S7" secondAttribute="bottom" id="Cy2-9i-W2c"/>
+                    <constraint firstItem="434-wl-tZg" firstAttribute="centerX" secondItem="pAz-wd-iEG" secondAttribute="centerX" id="Gxt-mv-4yw"/>
+                    <constraint firstItem="eWV-Gp-Asq" firstAttribute="top" secondItem="U5S-wA-749" secondAttribute="bottom" constant="1" id="IMt-Zc-xHK"/>
+                    <constraint firstItem="psL-59-6S7" firstAttribute="leading" secondItem="434-wl-tZg" secondAttribute="trailing" constant="8" id="NCC-81-pt7"/>
+                    <constraint firstAttribute="trailing" secondItem="U5S-wA-749" secondAttribute="trailing" constant="8" id="NOH-Lu-9NZ"/>
+                    <constraint firstItem="434-wl-tZg" firstAttribute="leading" secondItem="xB7-Fc-B5r" secondAttribute="leading" constant="5" id="RSs-S7-slo"/>
+                    <constraint firstAttribute="trailing" secondItem="psL-59-6S7" secondAttribute="trailing" constant="8" id="dIQ-s4-pWW"/>
+                    <constraint firstAttribute="bottom" secondItem="gWG-Lb-PEd" secondAttribute="bottom" constant="8" id="eGq-Pf-uNA"/>
+                    <constraint firstItem="434-wl-tZg" firstAttribute="top" secondItem="xB7-Fc-B5r" secondAttribute="top" constant="5" id="fiU-Zg-5ud"/>
+                    <constraint firstAttribute="trailing" secondItem="gWG-Lb-PEd" secondAttribute="trailing" constant="8" id="pSO-Xf-ifN"/>
+                    <constraint firstItem="gWG-Lb-PEd" firstAttribute="leading" secondItem="434-wl-tZg" secondAttribute="trailing" constant="8" id="qte-Ey-APQ"/>
+                    <constraint firstItem="eWV-Gp-Asq" firstAttribute="leading" secondItem="434-wl-tZg" secondAttribute="trailing" constant="5" id="vW8-C3-NXF"/>
+                    <constraint firstItem="U5S-wA-749" firstAttribute="leading" secondItem="434-wl-tZg" secondAttribute="trailing" constant="8" id="zK4-au-qX7"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="imgView" destination="434-wl-tZg" id="J9N-Jd-ghd"/>
+                <outlet property="lblLocation" destination="gWG-Lb-PEd" id="Tl9-ix-8j2"/>
+                <outlet property="lblName" destination="U5S-wA-749" id="wD6-Hg-bDX"/>
+                <outlet property="lblReview" destination="psL-59-6S7" id="LEq-lO-76O"/>
+                <outlet property="loadingIndi" destination="pAz-wd-iEG" id="DuL-Si-dZJ"/>
+                <outlet property="starRatings" destination="eWV-Gp-Asq" id="o7y-Pw-beQ"/>
+            </connections>
+            <point key="canvasLocation" x="25.5" y="52.5"/>
+        </tableViewCell>
+    </objects>
+</document>
